@@ -43,9 +43,14 @@ const ProjectSectionContainer = styled(motion.div)`
 @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
   grid-template-columns: repeat(1, 26.8rem);
 }
+@media only screen and (${device.mobileLSmallerBP}) and (${device.pixelBP}) {
+  grid-template-columns: repeat(1, 25.8rem);
+
+}
 @media only screen and (${device.tabletSmallerBP}) and (${device.tablet}) {
   grid-template-columns: repeat(2, 24rem);
 }
+
 
 `;
 

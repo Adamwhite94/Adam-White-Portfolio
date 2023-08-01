@@ -66,6 +66,12 @@ grid-template-columns: repeat(2, 11rem);
 justify-content: center;
 margin: auto;
 }
+@media only screen and (${device.mobileLSmallerBP}) and (${device.pixelBP}) {
+  display:grid;
+grid-template-columns: repeat(2, 12rem);
+justify-content: center;
+margin: auto;
+}
 @media only screen and (${device.tabletSmallerBP}) and (${device.tablet}) {
   display:grid;
 grid-template-columns: repeat(4, 11rem);
@@ -73,6 +79,7 @@ justify-content: center;
 margin: auto;
 padding-top: 0;
 }
+
 
 `;
 

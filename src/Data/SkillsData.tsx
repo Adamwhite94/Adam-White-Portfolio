@@ -38,21 +38,21 @@ export const SkillsIcons = [
         description: 'I use TypeScript to make use of type safety in my projects and error checking.'
     },
     {
-        id: '5',
+        id: '6',
         icon: <FiFramer />,
         title: 'Framer-Motion',
         description: 'I have used framer extensively throughout this portfolio to make the animations.'
     },
     {
-        id: '6',
+        id: '7',
         icon: <TbBrandThreejs />,
         title: 'Three',
         description: 'I plan to practice ThreeJs more in the coming weeks!.'
     },
     {
-        id: '7',
+        id: '8',
         icon: <SiStyledcomponents />,
         title: 'Styled-Components',
-        description: 'I use Styled-Components for every project, allowing me to create reusable components.'
+        description: 'I use Styled-Components for every project I make.'
     },
 ]

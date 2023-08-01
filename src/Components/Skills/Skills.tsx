@@ -37,7 +37,7 @@ const Skills = () => {
           {SkillsIcons.map((icon) => {
             return (
               <LogoWrapper
-              key="skillsicons"
+              key={icon.id}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}

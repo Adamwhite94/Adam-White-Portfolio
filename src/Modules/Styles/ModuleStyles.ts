@@ -34,6 +34,10 @@ const ProjectImage = styled.img`
   @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
     width: 21rem;
   }
+  @media only screen and (${device.mobileLSmallerBP}) and (${device.pixelBP}) {
+   height: 17rem;
+    
+}
 
   @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
     width: 23rem;
@@ -154,6 +158,7 @@ const SkillIcon = styled.span`
     font-size: 6rem;
     height: 5rem;
   }
+ 
   @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
     font-size: 6rem;
     height: 5rem;
@@ -190,6 +195,11 @@ const SkillDescription = styled.h4`
   }
   @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
     max-width: 10rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+}
+@media only screen and (${device.mobileLSmallerBP}) and (${device.pixelBP}) {
+  max-width: 11rem;
     font-size: 0.8rem;
     margin-top: 2rem;
 }

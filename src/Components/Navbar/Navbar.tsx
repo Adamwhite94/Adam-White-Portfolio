@@ -1,11 +1,11 @@
-import {NavbarList} from "../../Modules/Navbar";
+import {NavbarList, NavbarTitleComponent} from "../../Modules/Navbar";
 import { NavbarContainer, NavbarGroup} from "./NavbarComponentStyles";
 
 
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <NavbarList listItem="Adam White" />
+      <NavbarTitleComponent title="Adam White" />
       <NavbarGroup>
         <NavbarList href = "#Home" listItem="Home" />
         <NavbarList href = "#Projects" listItem="My Projects" />

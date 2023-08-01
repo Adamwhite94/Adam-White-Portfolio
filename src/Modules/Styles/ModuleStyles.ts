@@ -17,6 +17,20 @@ const NavbarListElements = styled.a`
     margin: 2rem 0 0 1rem;
   }
 `;
+const NavbarTitle = styled.h1`
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-left: 2rem;
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+  @media only screen and (${device.mobileMSmallerBP}) and (${device.mobileM}) {
+    margin: 2rem 0 0 1rem;
+  }
+  @media only screen and (${device.mobileLSmallerBP}) and (${device.mobileL}) {
+    margin: 2rem 0 0 1rem;
+  }
+`;
 
 //Project Module Styles
 const ProjectImage = styled.img`
@@ -233,6 +247,7 @@ export {
   SkillIcon,
   SkillTitle,
   SkillDescription,
-  FooterTitle
+  FooterTitle,
+  NavbarTitle
 
 };

@@ -5,8 +5,9 @@ import {
   ProjectStackIcon,
   ProjectStackTitle,
   ProjectStackDemoButton,
-  ProjectStackContainer
+  ProjectStackContainer,
 } from "./Styles/ModuleStyles";
+
 
 type ProjectImageProps = {
   project: string;
@@ -17,7 +18,7 @@ type ProjectImageProps = {
   htmlicon: React.ReactNode;
   cssicon: React.ReactNode;
   javascripticon: React.ReactNode;
-  demobutton: () => void;
+  demobutton: string;
 };
 
 function ProjectComponent({
@@ -31,6 +32,7 @@ function ProjectComponent({
   stacktitle,
   demobutton,
 }: ProjectImageProps) {
+
   return (
     <>
       <ProjectImage src={project} />
@@ -38,13 +40,16 @@ function ProjectComponent({
       <ProjectDescription>{description}</ProjectDescription>
       <ProjectStackTitle>{stacktitle}</ProjectStackTitle>
       <ProjectStackContainer>
-      <ProjectStackIcon>{reacticon}</ProjectStackIcon>
-      <ProjectStackIcon>{htmlicon}</ProjectStackIcon>
-      <ProjectStackIcon>{cssicon}</ProjectStackIcon>
-      <ProjectStackIcon>{javascripticon}</ProjectStackIcon>
+        <ProjectStackIcon>{reacticon}</ProjectStackIcon>
+        <ProjectStackIcon>{htmlicon}</ProjectStackIcon>
+        <ProjectStackIcon>{cssicon}</ProjectStackIcon>
+        <ProjectStackIcon>{javascripticon}</ProjectStackIcon>
       </ProjectStackContainer>
-      <ProjectStackDemoButton onClick={demobutton}>See Demo</ProjectStackDemoButton>
-
+      
+      <ProjectStackDemoButton href={demobutton} >
+        Visit
+      </ProjectStackDemoButton>
+      {/* renders 6 times in total, if you map an array of 6. it will render 6 */}
     </>
   );
 }

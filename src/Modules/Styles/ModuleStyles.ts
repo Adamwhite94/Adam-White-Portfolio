@@ -102,14 +102,14 @@ const ProjectStackTitle = styled.h3`
   height: 0.5rem;
 `;
 
-const ProjectStackDemoButton = styled.button`
+const ProjectStackDemoButton = styled.a`
   border: 1px solid white;
   background: none;
   padding: 0.4rem;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   max-width: 15rem;
   color: #fff;
-
+ text-decoration: none;
   &:hover {
     cursor: pointer;
   }
@@ -230,6 +230,7 @@ const FooterTitle = styled.h1`
 text-align: center;
 color: #fff;
 `;
+
 
 export {
   NavbarListElements,
